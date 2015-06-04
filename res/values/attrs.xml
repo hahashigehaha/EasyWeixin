@@ -5,8 +5,9 @@
          <attr name="textColor"  format="reference|color"/>
          <attr name="textSize"  format="reference|dimension"/>
          <attr name="text" format="reference|string"></attr>
-         <attr name="normalBitmp" format="reference"></attr>
-         <attr name="pitchBitmp" format="reference"></attr>
+         <attr name="normalBitmap" format="reference"></attr>
+         <attr name="pitchBitmap" format="reference"></attr>
+         <attr name="alpha" format="boolean"></attr>
     </declare-styleable> 
     
 </resources>

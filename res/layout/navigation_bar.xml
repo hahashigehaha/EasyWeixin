@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar="http://schemas.android.com/apk/res/com.moshangjian.easyweixin" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <com.moshangjian.easyweixin.BottomSingleView 
+        android:id="@+id/nav_one"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            toolbar:normalBitmap="@drawable/alg"
+            toolbar:pitchBitmap="@drawable/ale"
+            toolbar:text="@string/weixin"
+            toolbar:alpha="true"
+            toolbar:textColor="#45c01a"  
+            
+            />
+        <com.moshangjian.easyweixin.BottomSingleView 
+        android:id="@+id/nav_two"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            toolbar:textColor="#45c01a"  
+            android:layout_height="match_parent"
+            toolbar:normalBitmap="@drawable/alc"
+            toolbar:pitchBitmap="@drawable/ala"
+            toolbar:text="@string/phone"
+            />
+        <com.moshangjian.easyweixin.BottomSingleView 
+        android:id="@+id/nav_three"
+            android:layout_width="0dp"
+            toolbar:textColor="#45c01a"  
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            toolbar:text="@string/find"
+            toolbar:normalBitmap="@drawable/alk"
+            toolbar:pitchBitmap="@drawable/ali"
+            />
+        <com.moshangjian.easyweixin.BottomSingleView 
+            toolbar:text="@string/me"
+            toolbar:textColor="#45c01a"  
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            toolbar:normalBitmap="@drawable/alo"
+            toolbar:pitchBitmap="@drawable/alm"
+        android:id="@+id/nav_four"
+            />
+</merge>

@@ -1,23 +1,30 @@
 package com.moshangjian.easyweixin;
 
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.view.ViewPager;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.os.Build;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends FragmentActivity {
 
-    @Override
+    private NavigationBarView mNavBarView;
+	private ViewPager mViewPager;
+
+	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        
+        mViewPager = (ViewPager) findViewById(R.id.main_viewpager);
+        mNavBarView = (NavigationBarView) findViewById(R.id.main_navigation_bar);
+        
+        mNavBarView.setViewPager(mViewPager);
+        
+        MainPagerAdapter adapter = new MainPagerAdapter(getSupportFragmentManager());
+        mViewPager.setAdapter(adapter);
+        
     }
+	
+	
+	
 
 }

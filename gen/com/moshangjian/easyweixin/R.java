@@ -204,6 +204,14 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int activityChooserViewStyle=0x7f010068;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int alpha=0x7f01006f;
         /**  Specifies a background drawable for the action bar. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -473,7 +481,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int normalBitmp=0x7f01006d;
+        public static final int normalBitmap=0x7f01006d;
         /**  Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}. 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -515,7 +523,7 @@ containing a value of this type.
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int pitchBitmp=0x7f01006e;
+        public static final int pitchBitmap=0x7f01006e;
         /**  Default PopupMenu style. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -820,10 +828,11 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f060002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f070003;
+        public static final int abc_search_url_text_holo=0x7f070004;
         public static final int abc_search_url_text_normal=0x7f070000;
         public static final int abc_search_url_text_pressed=0x7f070002;
         public static final int abc_search_url_text_selected=0x7f070001;
+        public static final int defult_text_color=0x7f070003;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -1038,7 +1047,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f05003c;
+        public static final int action_settings=0x7f050043;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
@@ -1052,6 +1061,7 @@ containing a value of this type.
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050026;
         public static final int expanded_menu=0x7f05002c;
+        public static final int fragment_text=0x7f05003e;
         public static final int home=0x7f050014;
         public static final int homeAsUp=0x7f050005;
         public static final int icon=0x7f05002a;
@@ -1059,7 +1069,13 @@ containing a value of this type.
         public static final int image=0x7f050027;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
+        public static final int main_navigation_bar=0x7f05003d;
+        public static final int main_viewpager=0x7f05003c;
         public static final int middle=0x7f050012;
+        public static final int nav_four=0x7f050042;
+        public static final int nav_one=0x7f05003f;
+        public static final int nav_three=0x7f050041;
+        public static final int nav_two=0x7f050040;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
@@ -1139,8 +1155,10 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
         public static final int abc_search_view=0x7f030016;
         public static final int activity_main=0x7f030017;
-        public static final int fragment_main=0x7f030018;
-        public static final int support_simple_spinner_dropdown_item=0x7f030019;
+        public static final int base_fragment=0x7f030018;
+        public static final int fragment_main=0x7f030019;
+        public static final int navigation_bar=0x7f03001a;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -1188,7 +1206,11 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
         public static final int action_settings=0x7f0a000f;
         public static final int app_name=0x7f0a000d;
+        public static final int find=0x7f0a0012;
         public static final int hello_world=0x7f0a000e;
+        public static final int me=0x7f0a0013;
+        public static final int phone=0x7f0a0011;
+        public static final int weixin=0x7f0a0010;
     }
     public static final class style {
         /** 
@@ -2939,42 +2961,58 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #easyweixin_normalBitmp com.moshangjian.easyweixin:normalBitmp}</code></td><td></td></tr>
-           <tr><td><code>{@link #easyweixin_pitchBitmp com.moshangjian.easyweixin:pitchBitmp}</code></td><td></td></tr>
+           <tr><td><code>{@link #easyweixin_alpha com.moshangjian.easyweixin:alpha}</code></td><td></td></tr>
+           <tr><td><code>{@link #easyweixin_normalBitmap com.moshangjian.easyweixin:normalBitmap}</code></td><td></td></tr>
+           <tr><td><code>{@link #easyweixin_pitchBitmap com.moshangjian.easyweixin:pitchBitmap}</code></td><td></td></tr>
            <tr><td><code>{@link #easyweixin_text com.moshangjian.easyweixin:text}</code></td><td></td></tr>
            <tr><td><code>{@link #easyweixin_textColor com.moshangjian.easyweixin:textColor}</code></td><td></td></tr>
            <tr><td><code>{@link #easyweixin_textSize com.moshangjian.easyweixin:textSize}</code></td><td></td></tr>
            </table>
-           @see #easyweixin_normalBitmp
-           @see #easyweixin_pitchBitmp
+           @see #easyweixin_alpha
+           @see #easyweixin_normalBitmap
+           @see #easyweixin_pitchBitmap
            @see #easyweixin_text
            @see #easyweixin_textColor
            @see #easyweixin_textSize
          */
         public static final int[] easyweixin = {
             0x7f01006a, 0x7f01006b, 0x7f01006c, 0x7f01006d,
-            0x7f01006e
+            0x7f01006e, 0x7f01006f
         };
         /**
-          <p>This symbol is the offset where the {@link com.moshangjian.easyweixin.R.attr#normalBitmp}
+          <p>This symbol is the offset where the {@link com.moshangjian.easyweixin.R.attr#alpha}
           attribute's value can be found in the {@link #easyweixin} array.
 
 
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.moshangjian.easyweixin:normalBitmp
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.moshangjian.easyweixin:alpha
         */
-        public static final int easyweixin_normalBitmp = 3;
+        public static final int easyweixin_alpha = 5;
         /**
-          <p>This symbol is the offset where the {@link com.moshangjian.easyweixin.R.attr#pitchBitmp}
+          <p>This symbol is the offset where the {@link com.moshangjian.easyweixin.R.attr#normalBitmap}
           attribute's value can be found in the {@link #easyweixin} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.moshangjian.easyweixin:pitchBitmp
+          @attr name com.moshangjian.easyweixin:normalBitmap
         */
-        public static final int easyweixin_pitchBitmp = 4;
+        public static final int easyweixin_normalBitmap = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.moshangjian.easyweixin.R.attr#pitchBitmap}
+          attribute's value can be found in the {@link #easyweixin} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.moshangjian.easyweixin:pitchBitmap
+        */
+        public static final int easyweixin_pitchBitmap = 4;
         /**
           <p>This symbol is the offset where the {@link com.moshangjian.easyweixin.R.attr#text}
           attribute's value can be found in the {@link #easyweixin} array.
